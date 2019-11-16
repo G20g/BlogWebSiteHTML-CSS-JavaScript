@@ -14,6 +14,13 @@ var body = document.getElementById("blogBody");
 
 ebtn.onclick = function () {
     body.contentEditable = true;
+    var x = document.getElementById("ed");
+    if (x.innerHTML === "Edit") {
+        x.innerHTML = "Save";
+    } else {
+        x.innerHTML = "Edit";
+        body.contentEditable = false;
+    }
 
 }
 
