@@ -24,6 +24,6 @@ cbtn.onclick = function () {
     var para = document.createElement("p");
     para.style.background = "white";
      para.innerText = document.getElementById("area").value;
-    document.getElementById("add").appendChild(para);
+    document.getElementById("add").prepend(para);
     document.getElementById("area").value = '';
 }
